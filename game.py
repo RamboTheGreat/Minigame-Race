@@ -1,4 +1,4 @@
-import pygame, colors, player, math, random, time, gamestations, minigames, serial, test
+import pygame, colors, player, math, random, time, gamestations, serial, test
 import fallingobjectsgame, serial, dodge, timer, os, snake, pop, catch
 import draw, menu, sidescroll
 from pygame.locals import *
