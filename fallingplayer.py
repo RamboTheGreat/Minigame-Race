@@ -1,31 +1,33 @@
 import pygame, colors
+
+
 class player(pygame.sprite.Sprite):
     def __init__(self, WIDTH, HEIGHT):
         pygame.sprite.Sprite.__init__(self)
         # Loads all images of the player
         self.images_up = [pygame.image.load("maincharacter/6.png")]
         self.images_left = [pygame.image.load("maincharacter/4.png"),
-        pygame.image.load("maincharacter/20.png"),
-        pygame.image.load("maincharacter/21.png"),
-        pygame.image.load("maincharacter/22.png"),
-        pygame.image.load("maincharacter/23.png"),
-        pygame.image.load("maincharacter/24.png"),
-        pygame.image.load("maincharacter/25.png"),
-        pygame.image.load("maincharacter/26.png"),
-        pygame.image.load("maincharacter/27.png"),
-        pygame.image.load("maincharacter/28.png"),
-        pygame.image.load("maincharacter/29.png")]
+            pygame.image.load("maincharacter/20.png"),
+            pygame.image.load("maincharacter/21.png"),
+            pygame.image.load("maincharacter/22.png"),
+            pygame.image.load("maincharacter/23.png"),
+            pygame.image.load("maincharacter/24.png"),
+            pygame.image.load("maincharacter/25.png"),
+            pygame.image.load("maincharacter/26.png"),
+            pygame.image.load("maincharacter/27.png"),
+            pygame.image.load("maincharacter/28.png"),
+            pygame.image.load("maincharacter/29.png")]
         self.images_right = [pygame.image.load("maincharacter/7.png"),
-        pygame.image.load("maincharacter/40.png"),
-        pygame.image.load("maincharacter/41.png"),
-        pygame.image.load("maincharacter/42.png"),
-        pygame.image.load("maincharacter/43.png"),
-        pygame.image.load("maincharacter/44.png"),
-        pygame.image.load("maincharacter/45.png"),
-        pygame.image.load("maincharacter/46.png"),
-        pygame.image.load("maincharacter/47.png"),
-        pygame.image.load("maincharacter/48.png"),
-        pygame.image.load("maincharacter/49.png")] 
+            pygame.image.load("maincharacter/40.png"),
+            pygame.image.load("maincharacter/41.png"),
+            pygame.image.load("maincharacter/42.png"),
+            pygame.image.load("maincharacter/43.png"),
+            pygame.image.load("maincharacter/44.png"),
+            pygame.image.load("maincharacter/45.png"),
+            pygame.image.load("maincharacter/46.png"),
+            pygame.image.load("maincharacter/47.png"),
+            pygame.image.load("maincharacter/48.png"),
+            pygame.image.load("maincharacter/49.png")]
         self.image = self.images_up[0]
         self.rect = self.image.get_rect()
         self.rect.centerx = WIDTH / 2
@@ -99,4 +101,3 @@ class player(pygame.sprite.Sprite):
             self.rect.right = 0
         if self.rect.right < 0:
             self.rect.left = WIDTH
-        
