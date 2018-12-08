@@ -1,0 +1,71 @@
+Names: RAMANA VASANTHAN
+       RAYNARD DIZON
+ID #'s: 1458497
+		1531753
+
+CMPUT 274 Fa18
+Final Project: Minigame Race
+Collaboration Policy: Full
+
+Required Tools:
+	Laptop running an ubuntu distribution
+	arduino-ua folder pre-installed
+	
+	For multiplayer only:
+	Arduino MEGA board
+	Breadboard
+	Adafruit ILI9341 Breakout LCD display
+	arduino-ua folder pre-installed
+
+
+Included files:
+    /backrounds
+   	/Balloons
+   	/catch_objects
+   	/Enemy
+   	/FinalArduinoPart
+   	/maincharacter
+   	/__pycache__
+   	/rocks
+   	/swords
+   	Background.png
+   	catch.py
+   	catchobjects.py
+   	colors.py
+   	cmput274-display-wiring.txt
+   	dodge.py
+   	draw.py
+   	fallingobjects.py
+   	fallingobjectsgame.py
+   	fallingplayer.py
+   	game.py
+   	gamestations.png
+   	gamestations.py
+   	Makefile
+   	menu.py
+   	objectsfordodge.py
+   	player.py
+   	pop.py
+   	popobjects.py
+   	PressStart2P.ttf
+   	run.py
+   	runclass.py
+   	sideclass.py
+   	sidescroll.py
+   	snake.py
+   	snakeclasses.py
+   	soundtrack.wav
+   	test.py
+   	timer.py
+   	README
+
+Running Instructions:
+    First, install the pip installer from terminal using 'sudo apt-get python-pip'. Next, install pyserial and pygame using 'pip3 install pygame' and 'pip3 install pyserial'. After these are installed, cd into the FinalArduinoPart folder and type 'make' into the terminal. This will compile the main.cpp and get it ready to be uploaded to the Arduino. Direct yourself into this folder not using terminal and double click the PressStart2P.ttf file. When prompted, install the font.
+
+    To play the game simply cd into the folder containing this README and type 'make' into terminal.
+    
+    Single Player:
+    If you choose to play the game individually, choose the single player option. From here, you can choose to either play all the minigames as a race against yourself to achieve a new time record or play each of the minigames individually to practice.
+
+    Multiplayer:
+    To play multiplayer, first cd into the FinalArduinoPart folder and type 'make upload' to upload the score keeping program to the arduino. Wire the Arduino to an Adafruit ILI9341 Breakout according to the instructions in cmput274-display-wiring.txt. Connect the TX3 of one Arduino to the RX3 of the other and repeat the same for the other Arduino. With both Arduinos plugged in to each computer with a USB A/B cable, run the game by typing 'make' in the main folder, go to multiplayer, and click yes on the 'Are you ready?' screen when both players are ready. The Arduino will let you keep track of your own score and the other players and will also display when you have won or lost.
