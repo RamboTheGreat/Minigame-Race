@@ -73,7 +73,7 @@ def main():
     difficulty = 6
     pygame.init()
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption("Fallin! Minigame Mode")
+    pygame.display.set_caption("Falling! Minigame Mode")
     clock = pygame.time.Clock()
     timer1 = timer.Timer()
     timer1.start()

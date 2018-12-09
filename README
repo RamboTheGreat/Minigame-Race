@@ -69,3 +69,69 @@ Running Instructions:
 
     Multiplayer:
     To play multiplayer, first cd into the FinalArduinoPart folder and type 'make upload' to upload the score keeping program to the arduino. Wire the Arduino to an Adafruit ILI9341 Breakout according to the instructions in cmput274-display-wiring.txt. Connect the TX3 of one Arduino to the RX3 of the other and repeat the same for the other Arduino. With both Arduinos plugged in to each computer with a USB A/B cable, run the game by typing 'make' in the main folder, go to multiplayer, and click yes on the 'Are you ready?' screen when both players are ready. The Arduino will let you keep track of your own score and the other players and will also display when you have won or lost.
+
+
+    How to play the games:
+    Dodge:
+    Using WASD control your player to dodge the rocks. Each rock that passes the whole screen counts as a point. Once a score of 50 has been reached the game will be over. If at any point the player touches a rock the score will reset to zero.
+    Falling!:
+    Using AD to move left and right, dodge the swords. Each sword that passes the whole screen counts as a point. Once a score of 50 has been reached the game will be over. If at any point the player touches a rock the score will reset to zero.
+    Snake Evolved:
+    Using WASD to control the blue square, eat the green square while avoiding the red squares. If at any point the blue square touches the red square, the score will reset. Every green square eaten will count as a point. Eat 5 without touching a red square to win.
+    Catch:
+    Using AD to move left and right, catch everything but the bombs. Once 10 objects have been caught in a row without catching a bomb, you will have one. If A bomb is caught, the game will reset and the player score will go back to zero.
+    Pop!:
+    Using WASD to control the player, go around the screen to pop the balloons. Be careful, you only have 10 seconds to pop 5 of the balloons. If the time limit is reached, the game will reset and the score will go back to zero.
+    Jump!:
+    As link, you are running through the night when skeletons are coming towards you. Jump over them to avoid getting hit by their swords. Pass 15 skeletons to win the game. If at any point a skeleton gets you, your score will reset back to zero.
+
+    Bonus:
+    Included in the files is another minigame that didn't make it in to the full production! It's still on its first version but you are welcome to check it out. To play this bonus minigame, simply go into the directory that contains all the files and type "python3 run.py" into terminal. Use WASD to control the player to get across to the other side.
+
+Credits:
+	Sprites and Backgrounds:
+		 Link(Main Character):
+		 https://www.deviantart.com/tiozacdasgalaxias/art/Link-Sprite-Sheet-662562870
+		 Falling, Jump, and Catch background:
+		 https://imgur.com/gallery/VZ9H2
+		 Pop! Background:
+		 https://wallup.net/zelda-link-8-bit-the-legend-of-zelda-minimalism-pixels/
+		 Dodge! Background:
+		 https://www.youtube.com/watch?v=VMR7-9Bu4GU
+		 Gamestations Sprite:
+		 https://www.deviantart.com/frgrgrsfgsgsfgggsfsf/gallery/?catpath=%2Ffanart&sort=popularity
+		 Main Game Background:
+		 https://drunkenzebrastudio.wordpress.com/2011/12/11/belated-environments/
+		 Balloons:
+		 http://spritedatabase.net/files/ds/2211/Sprite/
+		 Catch Objects:
+		 https://ar.pinterest.com/pin/342906959108909966/
+		 Bomb:
+		 https://www.google.ca/search?q=8bit+bomb&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjwzLOGyZPfAhXxHjQIHQVLBYIQ_AUIDigB&biw=1375&bih=773#imgrc=PbAqS78lO5SSSM:
+		 Swords:
+		 https://www.google.com/search?sa=G&hl=en-CA&q=futuristic+sword+pixel+art&tbm=isch&tbs=simg:CAQSlQEJS9HDnemijn4aiQELEKjU2AQaAggKDAsQsIynCBpiCmAIAxIolwiiCIgDhwOhCO4CqxP3H5kImAjIN7Q0pjSSKcU3kSnZKck3lCSlNBowrtVrjTeC8N9do_1_1sIDLnUo9fxWWiTYqyVaEY6kTxtS24va27sLFPNLmHK7FoK1k2IAQMCxCOrv4IGgoKCAgBEgS9-PpTDA&ved=0ahUKEwjUsJSyy5PfAhVLKKwKHSvfABoQwg4IKygA&biw=736&bih=698#imgrc=S9HDnemijn7ukM
+		 Rocks:
+		 https://twitter.com/eigenbom/status/511437340166746112
+	Font:
+		https://www.dafont.com/press-start-2p.font
+	Code:
+		Menu:
+		https://gist.github.com/ohsqueezy/2802185
+		Timer:
+		https://stackoverflow.com/questions/39883175/game-timer-in-pygame
+		Misc:
+		https://stackoverflow.com/questions/14044147/animated-sprite-from-few-images
+		https://stackoverflow.com/questions/34240564/python-pygame-spawning-at-random-time
+		http://kidscancode.org/blog/2016/08/pygame_shmup_part_1/
+	Games:
+	Main Game: At the time of production we did not know that the game idea has already been implemented. This game is called WarioWare, same idea where you complete minigames.
+	Snake Evolved:
+	Based on Snake:
+	Jump!:
+	Based on general iOS minigames
+	All other games have been orginal ideas to the creators knowledge. 
+
+
+
+
+
