@@ -2,6 +2,7 @@ import pygame, colors, random, time, runclass, math, draw
 from random import randint
 
 def info(screen, WIDTH, HEIGHT):
+	# displays the goal of the game with the desired font and pauses for 1.5 seconds before the game starts
 	info_font  =  pygame.font.SysFont('Comic Sans MS', 100)
 	info_message  =  info_font.render('Reach the other side', False, colors.white)
 	info_width, info_height  =  info_font.size('Reach the other side')
@@ -10,6 +11,7 @@ def info(screen, WIDTH, HEIGHT):
 	pygame.display.flip()
 	time.sleep(1.5)
 def drawlose(screen, WIDTH, HEIGHT):
+	# displays a mesage when an object is hit and pauses for 1.5 seconds before restarting the game
 	lose_font  =  pygame.font.SysFont('Comic Sans MS', 100)
 	lose_message  =  lose_font.render('OOPS! Try Again!', False, colors.white)
 	lose_width, lose_height  =  lose_font.size('OOPS! Try Again!')
@@ -19,11 +21,17 @@ def drawlose(screen, WIDTH, HEIGHT):
 	time.sleep(1.5)
 def run(screen, WIDTH, HEIGHT, clock):
     FPS = 60
+
+    # creates 6 objects to be avoided
     object = [0]*6
+
+    #creates a player object and adds it to the sprite group
     player1 = runclass.player(WIDTH, HEIGHT)
     all_players = pygame.sprite.Group()
     all_players.add(player1)
     objectgroup = pygame.sprite.Group()
+
+    # initializes each object's position
     for i in range(0,4):
         object[i] = runclass.object(WIDTH,HEIGHT)
         objectgroup.add(object[i])
@@ -36,6 +44,9 @@ def run(screen, WIDTH, HEIGHT, clock):
         object[i].speed = randint(20,30)
     info(screen, WIDTH, HEIGHT)
     running = True
+	
+    # gives parameters for how to move the player and each object. Also defines collisions and when the game is either won
+    # or lost
     while running:
         clock.tick(FPS)
         for event in pygame.event.get():
@@ -73,6 +84,8 @@ def run(screen, WIDTH, HEIGHT, clock):
         all_players.draw(screen)
         pygame.display.flip()
 if __name__ == "__main__":
+    
+    # sets the resolution of the game window and runs the game
     WIDTH = 800
     HEIGHT = 600
     pygame.init()
