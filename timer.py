@@ -1,24 +1,24 @@
 import time
 # Simple timer class
-# Taken from https://stackoverflow.com/questions/39883175/game-timer-in-pygame
+# Adapted from https://stackoverflow.com/questions/39883175/game-timer-in-pygame
 class Timer:
     def __init__(self):
         self.elapsed = 0.0
-        self.running = False
-        self.last_start_time = None
+        self.run = False
+        self.last = None
 
     def start(self):
         if not self.running:
-            self.running = True
-            self.last_start_time = time.time()
+            self.run = True
+            self.last = time.time()
 
     def pause(self):
-        if self.running:
-            self.running = False
-            self.elapsed += time.time() - self.last_start_time
+        if self.run:
+            self.run = False
+            self.elapsed += time.time() - self.last
 
     def get_elapsed(self):
         elapsed = self.elapsed
-        if self.running:
-            elapsed += time.time() - self.last_start_time
+        if self.run:
+            elapsed += time.time() - self.last
         return elapsed
