@@ -52,6 +52,8 @@ class Player(pygame.sprite.Sprite):
 		pygame.image.load("maincharacter/37.png"),
 		pygame.image.load("maincharacter/38.png"),
 		pygame.image.load("maincharacter/39.png")]
+		
+		#initializes the location, movement, and stats of the player
 		self.image = self.images_down[0]
 		self.rect = self.image.get_rect()
 		self.rect.centerx  = startingX
